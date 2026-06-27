@@ -1,3 +1,5 @@
+**English** · [한국어](./README.ko.md)
+
 # The Agentic Harness
 
 *A field guide to the principles, boundaries, and operating philosophy of building a model-neutral AI agent harness on your own machine.*
@@ -12,7 +14,7 @@ This is not a tutorial, not product documentation, and not a pitch. It is a fiel
 
 It externalizes one mental model so you can reuse it: context as a scarce resource, memory as durable state, agents as context windows running inside execution environments, and capabilities as slots you can version and swap.
 
-The goal is twofold. For you, the reader, it marks the shift from *using* AI to *engineering how you use it*. For the author, it is a thinking artifact: a way to make an architecture legible, durable, and portable across tools, models, and runtimes.
+The goal is twofold. For you, the reader, it marks the shift from *using* AI to *engineering how you use it*. For me, it is a thinking artifact: a way to make an architecture legible, durable, and portable across tools, models, and runtimes.
 
 **Who it is for.** Anyone who wants to use AI well, whether or not you write code. The principles are universal: spend attention wisely, keep durable knowledge outside the conversation, delegate to specialists, check results, stay free of any single vendor. The deeper mechanics (the dispatch contract, hooks, the capability registry) describe how a builder makes that philosophy concrete. You do not need to implement them to absorb the ideas behind them.
 
@@ -325,4 +327,4 @@ Build the harness. Gate it honestly. Let it grow with you.
 - OpenAI Codex, [docs](https://developers.openai.com/codex) including [*Memories*](https://developers.openai.com/codex/memories) and the [*AGENTS.md* guide](https://developers.openai.com/codex/guides/agents-md): two-tier memory (a recall layer versus rules that must always apply), per-agent model and tool settings.
 - [*AGENTS.md*](https://agents.md/) (Agentic AI Foundation, Linux Foundation): the open instruction-file format, nearest-file-wins, user prompts override.
 
-*Quotations are exact. Figures (15x, 80%, 90.2%, 40%) come from the multi-agent research write-up. This guide names no products of its author and no third-party repositories, on purpose. The portable part is the philosophy and the precise vocabulary. Take what serves you, keep your source of truth singular, and let the rings thicken.*
+*Quotations are exact. Figures (15x, 80%, 90.2%, 40%) come from the multi-agent research write-up. I name none of my own products here, and no third-party repositories, on purpose. The portable part is the philosophy and the precise vocabulary. Take what serves you, keep your source of truth singular, and let the rings thicken.*
