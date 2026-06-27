@@ -28,6 +28,7 @@
 12. [사람들이 놓치는 것](#12-사람들이-놓치는-것)
 13. [운영 원칙](#13-운영-원칙)
 14. [닫는 글](#14-닫는-글)
+15. [용어집과 출처](#15-용어집과-출처)
 
 ---
 
@@ -290,3 +291,25 @@
 나이테의 그림이 끝맺기에 알맞습니다. 당신은 제품을 출하하는 게 아닙니다. 무언가를 키우는 겁니다. 세션마다 옅은 자국이 남습니다. 레지스트리는 깊어지고 지식은 이어지며, 시간이 지나면 계약은 당신이 실제로 일하는 방식 둘레로 조여듭니다. 어느 날 단면을 들여다보면, 그 나이테 속에서, 당신이 지금처럼 생각하게 되기까지의 모든 자취를 읽게 됩니다. 틀림없이 당신의 것인 시스템이 쥐고 이어 온 자취를요.
 
 하네스를 지으세요. 정직하게 게이트를 거세요. 당신과 함께 자라게 하세요.
+
+---
+
+## 15. 용어집과 출처
+
+**핵심 용어** (이 글에서 쓴 용어들): *augmented LLM*(증강된 LLM); *workflow*(워크플로우)와 *agent*(에이전트); *prompt chaining*(프롬프트 체이닝)과 *gates*(게이트); *routing*(라우팅); *parallelization*(병렬화); *orchestrator-workers*(오케스트레이터-워커); *evaluator-optimizer*(평가자-최적화자); *context engineering*(컨텍스트 엔지니어링); *attention budget*(어텐션 예산); *context rot*(컨텍스트 부패); *just-in-time retrieval*(적시 검색); *progressive disclosure*(점진적 공개); *compaction*(컴팩션); *structured note-taking*(구조화된 노트 작성); *sub-agent context isolation*(서브 에이전트 컨텍스트 격리); *right altitude*(적정 고도); *tools as a contract*(계약으로서의 도구); *namespacing*(네임스페이싱); *end-state evaluation*(끝 상태 평가); *effort scaling*(노력 스케일링); *emergent behavior*(창발적 행동); *enforced configuration*(강제된 설정, hook); *agentic search versus semantic search*(에이전틱 검색 대 시맨틱 검색); *memory tool*(메모리 도구); *AGENTS.md*; *manager pattern*(매니저 패턴).
+
+**1차 출처** (이 글의 생각들 뒤에 있는 공식 엔지니어링 글과 문서. 직접 읽어 보시길 권합니다):
+
+- Anthropic, [*Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents) (Schluntz and Zhang): 워크플로우 대 에이전트, 그리고 구성 블록 패턴들.
+- Anthropic, [*Effective Context Engineering for AI Agents*](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): 컨텍스트 엔지니어링, 어텐션 예산, 컨텍스트 부패, 적시 검색, 점진적 공개, 컴팩션, 구조화된 노트 작성, 적정 고도.
+- Anthropic, [*How We Built Our Multi-Agent Research System*](https://www.anthropic.com/engineering/multi-agent-research-system): 실전의 오케스트레이터-워커, 토큰 경제학, 노력 스케일링, 끝 상태 평가, 창발적 행동.
+- Anthropic, [*Writing Effective Tools for Agents*](https://www.anthropic.com/engineering/writing-tools-for-agents): 계약으로서의 도구, 네임스페이싱, 그리고 최상위 실패로서의 도구 겹침.
+- Anthropic, [*Building Agents with the Claude Agent SDK*](https://claude.com/blog/building-agents-with-the-claude-agent-sdk): 서브 에이전트 컨텍스트 격리와 응축된 반환, 에이전틱 검색 대 시맨틱 검색.
+- Anthropic, [*Agent Skills*](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) 문서: 점진적 공개, 거의 공짜인 다수 설치, 그리고 공급망 위험으로서의 skill.
+- Anthropic, [*Memory tool*](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool)과 [*context editing*](https://platform.claude.com/docs/en/build-with-claude/context-editing) 문서: 영속 메모리, 메모리 디렉터리, 중단 가정, 컴팩션을 넘어선 보존.
+- Claude Code, [*Memory*](https://code.claude.com/docs/en/memory), [*Hooks*](https://code.claude.com/docs/en/hooks), [*Sub-agents*](https://code.claude.com/docs/en/sub-agents) 문서: 지시 파일의 비용과 준수, "강제된 설정이 아니라 컨텍스트", 그리고 PreToolUse 차단.
+- OpenAI, [*A Practical Guide to Building Agents*](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) (PDF): 언제 에이전트를 지을지, 단일 에이전트 대 매니저 패턴, 가드레일.
+- OpenAI Codex, [docs](https://developers.openai.com/codex) 중 [*Memories*](https://developers.openai.com/codex/memories)와 [*AGENTS.md* 가이드](https://developers.openai.com/codex/guides/agents-md): 계층화된 메모리(회상 계층과 항상 적용되어야 하는 규칙), 에이전트별 모델·도구 설정.
+- [*AGENTS.md*](https://agents.md/) (Agentic AI Foundation, Linux Foundation): 열린 지시 파일 형식, 가장 가까운 파일 우선, 사용자 프롬프트 우선.
+
+*이 글에 쓰인 어휘와 개념은 위 작업에서 빌려온 것이고, 그것을 엮은 방식과 하네스는 제 것입니다. 이 글은 제가 만든 어떤 제품도, 어떤 제3자 저장소도 일부러 거명하지 않았습니다. 도움이 되는 것을 가져가시고, 진실 원천은 하나로 유지하시고, 나이테가 두꺼워지게 두십시오.*

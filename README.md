@@ -28,6 +28,7 @@ None of this is only for people who write code. Anyone who wants to use AI well 
 12. [What people overlook](#12-what-people-overlook)
 13. [Operating principles](#13-operating-principles)
 14. [Closing](#14-closing)
+15. [Glossary and sources](#15-glossary-and-sources)
 
 ---
 
@@ -290,3 +291,25 @@ A harness, done well, stops feeling like configuration and starts feeling like a
 The tree-ring image is the right one to end on. You are not shipping a product. You are growing something. Each session leaves a faint mark. The registry deepens and the knowledge connects, and over time the contract tightens around how you actually work. One day you look at the cross-section and read, in its rings, the whole trace of how you came to think the way you do, held and continued by a system that is unmistakably yours.
 
 Build the harness. Gate it honestly. Let it grow with you.
+
+---
+
+## 15. Glossary and sources
+
+**Core terms** used through this piece: *augmented LLM*; *workflow* and *agent*; *prompt chaining* and *gates*; *routing*; *parallelization*; *orchestrator-workers*; *evaluator-optimizer*; *context engineering*; *attention budget*; *context rot*; *just-in-time retrieval*; *progressive disclosure*; *compaction*; *structured note-taking*; *sub-agent context isolation*; *right altitude*; *tools as a contract*; *namespacing*; *end-state evaluation*; *effort scaling*; *emergent behavior*; *enforced configuration (hooks)*; *agentic search versus semantic search*; *memory tool*; *AGENTS.md*; *manager pattern*.
+
+**Primary sources** (the official engineering writing and docs behind the ideas here; worth reading directly):
+
+- Anthropic, [*Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents) (Schluntz and Zhang): workflows versus agents, and the building-block patterns.
+- Anthropic, [*Effective Context Engineering for AI Agents*](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): context engineering, attention budget, context rot, just-in-time retrieval, progressive disclosure, compaction, structured note-taking, right altitude.
+- Anthropic, [*How We Built Our Multi-Agent Research System*](https://www.anthropic.com/engineering/multi-agent-research-system): orchestrator-worker in practice, the token economics, effort scaling, end-state evaluation, emergent behavior.
+- Anthropic, [*Writing Effective Tools for Agents*](https://www.anthropic.com/engineering/writing-tools-for-agents): tools as a contract, namespacing, and tool overlap as the top failure.
+- Anthropic, [*Building Agents with the Claude Agent SDK*](https://claude.com/blog/building-agents-with-the-claude-agent-sdk): sub-agent context isolation and distilled returns, agentic search versus semantic search.
+- Anthropic, [*Agent Skills*](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) docs: progressive disclosure, installing many for free, and skills as a supply-chain risk.
+- Anthropic, [*Memory tool*](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool) and [*context editing*](https://platform.claude.com/docs/en/build-with-claude/context-editing) docs: persistent memory, the memory directory, assume-interruption, persistence across compaction.
+- Claude Code, [*Memory*](https://code.claude.com/docs/en/memory), [*Hooks*](https://code.claude.com/docs/en/hooks), and [*Sub-agents*](https://code.claude.com/docs/en/sub-agents) docs: instruction-file cost and adherence, "context, not enforced configuration," and PreToolUse blocking.
+- OpenAI, [*A Practical Guide to Building Agents*](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) (PDF): when to build an agent, single agent versus manager pattern, guardrails.
+- OpenAI Codex, [docs](https://developers.openai.com/codex) including [*Memories*](https://developers.openai.com/codex/memories) and the [*AGENTS.md* guide](https://developers.openai.com/codex/guides/agents-md): layered memory (a recall layer versus rules that must always apply), per-agent model and tool settings.
+- [*AGENTS.md*](https://agents.md/) (Agentic AI Foundation, Linux Foundation): the open instruction-file format, nearest-file-wins, user prompts override.
+
+*The vocabulary and concepts here are borrowed from the work above; the synthesis, and the harness, are my own. I name none of my own products here, and no third-party repositories, on purpose. Take what serves you, keep your source of truth singular, and let the rings thicken.*
